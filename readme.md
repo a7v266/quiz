@@ -1,5 +1,14 @@
 # Quiz
 
+This application implements the functionality of a tool provider using LTI protocol.
+
+LTI protocol specification
+https://www.imsglobal.org/specs/ltiv1p0/implementation-guide
+
+Tool consumer
+https://canvas.instructure.com/
+
+
 ## API specification
 
 ### Environment API
