@@ -1,0 +1,10 @@
+{
+  "data": {
+    "id": "1",
+    "type": "topic"
+  },
+  "links": {
+    "related": "http://localhost/api/topics/1",
+    "self": "http://localhost/api/problems/1/topic"
+  }
+}

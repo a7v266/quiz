@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "resourceLink": {
+        "id": 11
+      },
+      "topicId": "topicId1001",
+      "problemDescription": "problemDescription1",
+      "problemComplexity": 1.00,
+      "expectedAnswers": [
+        {
+          "answerValue": "answerValue11",
+          "answerStatus": 1
+        },
+        {
+          "answerValue": "answerValue12",
+          "answerStatus": 2
+        },
+        {
+          "answerValue": "answerValue13",
+          "answerStatus": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "resourceLink": {
+        "id": 11
+      },
+      "topicId": "topicId1001",
+      "problemDescription": "problemDescription2",
+      "problemComplexity": 1.00,
+      "expectedAnswers": [
+        {
+          "answerValue": "answerValue21",
+          "answerStatus": 2
+        },
+        {
+          "answerValue": "answerValue22",
+          "answerStatus": 2
+        },
+        {
+          "answerValue": "answerValue23",
+          "answerStatus": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "resourceLink": {
+        "id": 11
+      },
+      "topicId": "topicId1002",
+      "problemDescription": "problemDescription2",
+      "problemComplexity": 0.59,
+      "expectedAnswers": [
+        {
+          "answerValue": "answerValue21",
+          "answerStatus": 1
+        },
+        {
+          "answerValue": "answerValue22",
+          "answerStatus": 1
+        },
+        {
+          "answerValue": "answerValue23",
+          "answerStatus": 1
+        }
+      ]
+    }
+  ],
+  "totalCount": 4
+}

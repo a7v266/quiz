@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS problem_image;
+DROP TABLE IF EXISTS image;
+DROP TABLE IF EXISTS problem;
+DROP TABLE IF EXISTS solution;
+DROP TABLE IF EXISTS resource_link;
+DROP TABLE IF EXISTS context;
+DROP TABLE IF EXISTS local_user;
+DROP TABLE IF EXISTS user_group;
+DROP TABLE IF EXISTS launch_request;
+DROP TABLE IF EXISTS flyway_schema_history;
+

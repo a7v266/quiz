@@ -1,0 +1,32 @@
+{
+  "id": 1,
+  "resourceLink": {
+    "id": 11,
+    "context": {
+      "id": 1,
+      "contextId": "contextId-1",
+      "contextTitle": "contextTitle-1",
+      "contextLabel": "contextLabel-1",
+      "contextType": "contextType-1"
+    },
+    "resourceLinkId": "resourceLinkId-11",
+    "resourceLinkTitle": "resourceLinkTitle-11",
+    "resourceLinkDescription": "resourceLinkDescription-11"
+  },
+  "topicId": "topicId1001",
+  "problemDescription": "problemDescription1",
+  "expectedAnswers": [
+    {
+      "answerValue": "answerValue11",
+      "answerStatus": 1
+    },
+    {
+      "answerValue": "answerValue12",
+      "answerStatus": 2
+    },
+    {
+      "answerValue": "answerValue13",
+      "answerStatus": 3
+    }
+  ]
+}

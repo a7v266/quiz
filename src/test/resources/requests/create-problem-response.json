@@ -1,0 +1,23 @@
+{
+  "id": 4,
+  "resourceLink": {
+    "id": 11
+  },
+  "topicId": "createdTopicId",
+  "problemDescription": "createdProblemDescription",
+  "problemComplexity": 1.0,
+  "expectedAnswers": [
+    {
+      "answerValue": "createdAnswerValue1",
+      "answerStatus": 1
+    },
+    {
+      "answerValue": "createdAnswerValue2",
+      "answerStatus": 1
+    },
+    {
+      "answerValue": "createdAnswerValue3",
+      "answerStatus": 1
+    }
+  ]
+}

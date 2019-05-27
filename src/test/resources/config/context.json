@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "localUserId": 1,
+    "contextId": "contextId-1",
+    "contextTitle": "contextTitle-1",
+    "contextLabel": "contextLabel-1",
+    "contextType": "contextType-1"
+  },
+  {
+    "id": 2,
+    "localUserId": 1,
+    "contextId": "contextId-2",
+    "contextTitle": "contextTitle-2",
+    "contextLabel": "contextLabel-2",
+    "contextType": "contextType-2"
+  },
+  {
+    "id": 3,
+    "localUserId": 1,
+    "contextId": "contextId-3",
+    "contextTitle": "contextTitle-3",
+    "contextLabel": "contextLabel-3",
+    "contextType": "contextType-3"
+  }
+]

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="{error.registerUser.duplicateUsername}">User registration failed. Duplicate username "{0}" found.
+    </entry>
+
+    <entry key="{ui.applicationName}">Quiz</entry>
+
+    <entry key="{ui.navbar.logout}">Log Out</entry>
+
+    <entry key="{ui.profile.userProfile}">User Profile</entry>
+    <entry key="{ui.profile.firstName}">First Name</entry>
+    <entry key="{ui.profile.lastName}">Last Name</entry>
+    <entry key="{ui.profile.email}">Email</entry>
+    <entry key="{ui.profile.consumerKey}">Consumer Key</entry>
+    <entry key="{ui.profile.sharedSecret}">Shared Secret</entry>
+    <entry key="{ui.profile.launchUrl}">Launch URL</entry>
+
+</properties>

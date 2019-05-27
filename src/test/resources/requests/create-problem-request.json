@@ -1,0 +1,16 @@
+{
+  "topicId": "createdTopicId",
+  "problemDescription": "createdProblemDescription",
+  "problemComplexity": 1.0,
+  "expectedAnswers": [
+    {
+      "answerValue": "createdAnswerValue1"
+    },
+    {
+      "answerValue": "createdAnswerValue2"
+    },
+    {
+      "answerValue": "createdAnswerValue3"
+    }
+  ]
+}

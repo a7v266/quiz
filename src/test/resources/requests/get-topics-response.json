@@ -1,0 +1,215 @@
+{
+  "links": {
+    "self": "https://softaria.ru:8443/api/topics"
+  },
+  "data": [
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/100"
+      },
+      "id": "100",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Big-O notation"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "self": "https://softaria.ru:8443/api/topics/100/parentTopic"
+          },
+          "data": null
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/200"
+      },
+      "id": "200",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Algorithms with numbers"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "self": "https://softaria.ru:8443/api/topics/200/parentTopic"
+          },
+          "data": null
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/210"
+      },
+      "id": "210",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Basic arithmetic"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "related": "https://softaria.ru:8443/api/topics/200",
+            "self": "https://softaria.ru:8443/api/topics/210/parentTopic"
+          },
+          "data": {
+            "id": "200",
+            "type": "topic"
+          }
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/220"
+      },
+      "id": "220",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Modular arithmetic"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "related": "https://softaria.ru:8443/api/topics/200",
+            "self": "https://softaria.ru:8443/api/topics/220/parentTopic"
+          },
+          "data": {
+            "id": "200",
+            "type": "topic"
+          }
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/230"
+      },
+      "id": "230",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Primality testing"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "related": "https://softaria.ru:8443/api/topics/200",
+            "self": "https://softaria.ru:8443/api/topics/230/parentTopic"
+          },
+          "data": {
+            "id": "200",
+            "type": "topic"
+          }
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/240"
+      },
+      "id": "240",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Cryptography"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "related": "https://softaria.ru:8443/api/topics/200",
+            "self": "https://softaria.ru:8443/api/topics/240/parentTopic"
+          },
+          "data": {
+            "id": "200",
+            "type": "topic"
+          }
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/250"
+      },
+      "id": "250",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Universal hashing"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "related": "https://softaria.ru:8443/api/topics/200",
+            "self": "https://softaria.ru:8443/api/topics/250/parentTopic"
+          },
+          "data": {
+            "id": "200",
+            "type": "topic"
+          }
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/300"
+      },
+      "id": "300",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Divide-and-conquer algorithms "
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "self": "https://softaria.ru:8443/api/topics/300/parentTopic"
+          },
+          "data": null
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/310"
+      },
+      "id": "310",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Multiplication"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "related": "https://softaria.ru:8443/api/topics/300",
+            "self": "https://softaria.ru:8443/api/topics/310/parentTopic"
+          },
+          "data": {
+            "id": "300",
+            "type": "topic"
+          }
+        }
+      }
+    },
+    {
+      "links": {
+        "self": "https://softaria.ru:8443/api/topics/320"
+      },
+      "id": "320",
+      "type": "topic",
+      "attributes": {
+        "topicTitle": "Recurrence relations"
+      },
+      "relationships": {
+        "parentTopic": {
+          "links": {
+            "related": "https://softaria.ru:8443/api/topics/300",
+            "self": "https://softaria.ru:8443/api/topics/320/parentTopic"
+          },
+          "data": {
+            "id": "300",
+            "type": "topic"
+          }
+        }
+      }
+    }
+  ]
+}

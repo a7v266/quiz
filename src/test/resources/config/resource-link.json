@@ -1,0 +1,32 @@
+[
+  {
+    "id": 11,
+    "localUserId": 1,
+    "context": {
+      "id": 1
+    },
+    "resourceLinkId": "resourceLinkId-11",
+    "resourceLinkTitle": "resourceLinkTitle-11",
+    "resourceLinkDescription": "resourceLinkDescription-11"
+  },
+  {
+    "id": 12,
+    "localUserId": 1,
+    "context": {
+      "id": 1
+    },
+    "resourceLinkId": "resourceLinkId-12",
+    "resourceLinkTitle": "resourceLinkTitle-12",
+    "resourceLinkDescription": "resourceLinkDescription-12"
+  },
+  {
+    "id": 13,
+    "localUserId": 1,
+    "context": {
+      "id": 1
+    },
+    "resourceLinkId": "resourceLinkId-13",
+    "resourceLinkTitle": "resourceLinkTitle-13",
+    "resourceLinkDescription": "resourceLinkDescription-13"
+  }
+]

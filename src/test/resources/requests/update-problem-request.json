@@ -1,0 +1,13 @@
+{
+  "topicId": "updatedTopicId",
+  "problemDescription": "updatedProblemDescription",
+  "problemComplexity": 2.0,
+  "expectedAnswers": [
+    {
+      "answerValue": "updatedAnswerValue1"
+    },
+    {
+      "answerValue": "updatedAnswerValue2"
+    }
+  ]
+}
