@@ -1,6 +1,6 @@
 java.lang.IllegalStateException: argument type mismatch
-Controller [com.softaria.quiz.controller.ProblemController]
-Method [public com.softaria.quiz.model.api.ProblemList com.softaria.quiz.controller.ProblemController.getProblems(com.softaria.quiz.model.api.Parameters)] with argument values:
+Controller [ProblemController]
+Method [public ProblemList ProblemController.getProblems(com.softaria.quiz.model.api.Parameters)] with argument values:
  [0] [type=java.util.LinkedHashMap] [value={pageNumber=1, pageSize=3}]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:194)
 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
@@ -67,8 +67,8 @@ Method [public com.softaria.quiz.model.api.ProblemList com.softaria.quiz.control
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182)
-	at com.softaria.quiz.IntegrationTest.testReadProblems(IntegrationTest.java:80)
-	at com.softaria.quiz.IntegrationTest.test(IntegrationTest.java:58)
+	at IntegrationTest.testReadProblems(IntegrationTest.java:80)
+	at IntegrationTest.test(IntegrationTest.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
