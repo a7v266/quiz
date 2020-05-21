@@ -1,7 +1,6 @@
 package com.quiz.model.search.core;
 
 import com.quiz.utils.*;
-import com.softaria.quiz.utils.*;
 
 import java.io.Serializable;
 import java.util.Collection;

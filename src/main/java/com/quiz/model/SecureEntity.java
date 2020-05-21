@@ -21,6 +21,12 @@ public class SecureEntity extends BaseEntity {
         localUserId = EnvironmentService.getLocalUserId();
     }
 
+    public void setLocalUser(LocalUser localUser) {
+        if (localUser != null) {
+            localUserId = localUser.getId();
+        }
+    }
+
     public boolean isAccessAllowed(LocalUser localUser) {
         return localUser != null && Objects.equals(localUser.getId(), localUserId);
     }

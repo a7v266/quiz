@@ -48,14 +48,14 @@ public class Problem extends SecureEntity {
     @JsonProperty
     @NotNull(message = Messages.ERROR_PROBLEM_COMPLEXITY_EMPTY)
     private BigDecimal problemComplexity;
-
+/*
     @Column(name = "expected_answers", nullable = false)
     @Type(type = "AnswerListType")
     @JsonProperty
     @AnswerListConstraint
     @NotEmpty(message = Messages.ERROR_ANSWER_LIST_EMPTY)
     private List<Answer> expectedAnswers;
-
+*/
     public ResourceLink getResourceLink() {
         return resourceLink;
     }
@@ -87,12 +87,13 @@ public class Problem extends SecureEntity {
     public void setProblemComplexity(BigDecimal problemComplexity) {
         this.problemComplexity = problemComplexity;
     }
-
+/*
     public List<Answer> getExpectedAnswers() {
         return expectedAnswers;
     }
 
     public void setExpectedAnswers(List<Answer> expectedAnswers) {
         this.expectedAnswers = expectedAnswers;
-    }
+      }
+*/
 }

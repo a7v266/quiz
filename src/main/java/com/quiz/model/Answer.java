@@ -6,9 +6,10 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.quiz.model.json.AnswerStatusDeserializer;
 import com.quiz.model.json.IdentifiableSerializer;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Answer {
+public class Answer implements Serializable {
 
     public static final String ANSWER_VALUE = "answerValue";
     public static final String ANSWER_STATUS = "answerStatus";

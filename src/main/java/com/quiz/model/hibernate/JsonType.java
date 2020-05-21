@@ -14,6 +14,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.Arrays;
 
 public abstract class JsonType implements UserType {
 
@@ -107,6 +108,6 @@ public abstract class JsonType implements UserType {
 
     @Override
     public int[] sqlTypes() {
-        return SQL_TYPES;
+        return Arrays.copyOf(SQL_TYPES, SQL_TYPES.length);
     }
 }

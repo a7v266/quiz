@@ -176,9 +176,10 @@ public class LaunchRequest extends BaseEntity {
     @JsonProperty
     private String oauthSignature;
 
-    public Context createContext() {
+    public Context createContext(LocalUser localUser) {
         Context context = new Context();
         context.setContextId(contextId);
+        context.setLocalUser(localUser);
         return updateContext(context);
     }
 
@@ -189,9 +190,10 @@ public class LaunchRequest extends BaseEntity {
         return context;
     }
 
-    public ResourceLink createResourceLink() {
+    public ResourceLink createResourceLink(LocalUser localUser) {
         ResourceLink resourceLink = new ResourceLink();
         resourceLink.setResourceLinkId(resourceLinkId);
+        resourceLink.setLocalUser(localUser);
         return updateResourceLink(resourceLink);
     }
 

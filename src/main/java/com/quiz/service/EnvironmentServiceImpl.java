@@ -1,9 +1,6 @@
 package com.quiz.service;
 
 import com.quiz.model.*;
-import com.quiz.model.search.core.Filter;
-import com.quiz.model.search.core.Search;
-import com.softaria.quiz.model.*;
 import com.quiz.model.api.EnvironmentRequest;
 import com.quiz.model.api.EnvironmentResponse;
 import com.quiz.model.exception.ForbiddenException;
@@ -38,45 +35,47 @@ public class EnvironmentServiceImpl implements EnvironmentService {
     @Override
     @Transactional
     public Environment createEnvironment(LocalUser localUser, LaunchRequest launchRequest) {
-
         launchRequestPersistence.save(launchRequest);
-
         if (StringUtils.isEmpty(launchRequest.getResourceLinkId())) {
             throw new ForbiddenException(Messages.ERROR_RESOURCE_LINK_ID_EMPTY);
         }
-
-        Search search = new Search();
-        search.addFilter(Filter.eq(ResourceLink.RESOURCE_LINK_ID, launchRequest.getResourceLinkId()));
-        ResourceLink resourceLink = resourceLinkPersistence.uniqueResult(search);
-
+        ResourceLink resourceLink = resourceLinkPersistence.findByResourceLinkId(launchRequest.getResourceLinkId());
         if (resourceLink == null) {
-
-            Context context = launchRequest.createContext();
-            context.setLocalUserId(localUser.getId());
-            contextPersistence.save(context);
-
-            resourceLink = launchRequest.createResourceLink();
-            resourceLink.setContext(context);
-            resourceLink.setLocalUserId(localUser.getId());
-            resourceLinkPersistence.save(resourceLink);
-
+            resourceLink = createResourceLink(launchRequest, localUser);
         } else {
-
-            Context context = resourceLink.getContext();
-            launchRequest.updateContext(context);
-            if (ObjectUtils.notEquals(context.getLocalUserId(), localUser.getId())) {
-                throw new ForbiddenException(Messages.ERROR_CONTEXT_FORBIDDEN, context);
-            }
-            contextPersistence.update(context);
-
-            launchRequest.updateResourceLink(resourceLink);
-            if (ObjectUtils.notEquals(resourceLink.getLocalUserId(), localUser.getId())) {
-                throw new ForbiddenException(Messages.ERROR_RESOURCE_LINK_FORBIDDEN, resourceLink);
-            }
-            resourceLinkPersistence.update(resourceLink);
-
+            updateResourceLink(resourceLink, launchRequest, localUser);
         }
         return new Environment(localUser, resourceLink, launchRequest);
+    }
+
+    private ResourceLink createResourceLink(LaunchRequest launchRequest, LocalUser localUser) {
+        ResourceLink resourceLink = launchRequest.createResourceLink(localUser);
+        resourceLink.setContext(createContext(launchRequest, localUser));
+        resourceLinkPersistence.save(resourceLink);
+        return resourceLink;
+    }
+
+    private Context createContext(LaunchRequest launchRequest, LocalUser localUser) {
+        Context context = launchRequest.createContext(localUser);
+        contextPersistence.save(context);
+        return context;
+    }
+
+    private void updateResourceLink(ResourceLink resourceLink, LaunchRequest launchRequest, LocalUser localUser) {
+        updateContext(resourceLink.getContext(), launchRequest, localUser);
+        launchRequest.updateResourceLink(resourceLink);
+        if (ObjectUtils.notEquals(resourceLink.getLocalUserId(), localUser.getId())) {
+            throw new ForbiddenException(Messages.ERROR_RESOURCE_LINK_FORBIDDEN, resourceLink);
+        }
+        resourceLinkPersistence.update(resourceLink);
+    }
+
+    private void updateContext(Context context, LaunchRequest launchRequest, LocalUser localUser) {
+        launchRequest.updateContext(context);
+        if (ObjectUtils.notEquals(context.getLocalUserId(), localUser.getId())) {
+            throw new ForbiddenException(Messages.ERROR_CONTEXT_FORBIDDEN, context);
+        }
+        contextPersistence.update(context);
     }
 
     @Override

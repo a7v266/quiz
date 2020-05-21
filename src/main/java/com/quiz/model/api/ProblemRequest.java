@@ -41,7 +41,7 @@ public class ProblemRequest {
         problem.setTopicId(topicId);
         problem.setProblemDescription(problemDescription);
         problem.setProblemComplexity(problemComplexity);
-        problem.setExpectedAnswers(expectedAnswers.stream().map(Answer::createAnswer).collect(Collectors.toList()));
+        //problem.setExpectedAnswers(expectedAnswers.stream().map(Answer::createAnswer).collect(Collectors.toList()));
         return problem;
     }
 

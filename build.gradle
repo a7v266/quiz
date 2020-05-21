@@ -2,7 +2,7 @@ buildscript {
     ext {
         version = '0.0.1'
         group = 'com.softaria'
-        springBootVersion = '2.1.4.RELEASE'
+        springBootVersion = '2.1.5.RELEASE'
         springSecurityVersion = '5.1.5.RELEASE'
         postgresqlVersion = '42.2.5'
         h2databaseVersion = '1.4.199'
